@@ -1,0 +1,47 @@
+{
+  "serverUrl": "https://www.mylasertools.com/mcp",
+  "signInUrl": "https://www.mylasertools.com/auth/sign-in",
+  "testCases": [
+    {
+      "id": "artwork-search-and-preview",
+      "prompt": "Find an oak leaf vector for engraving and show its preview, available formats, and rights.",
+      "expectedTools": ["search_art", "preview_art"],
+      "expectedResult": "A focused artwork search followed by one preview with actual download formats and per-item rights. No purchase or Spark spend.",
+      "lastVerified": "2026-10-17",
+      "observed": "Search returned 11 results. Preview of Oak leaf and acorn returned SVG availability, source-qualified public-domain terms, and unknown contour status. No Sparks were spent."
+    },
+    {
+      "id": "free-generator-handoff",
+      "prompt": "Open a free plant stake project for Rosemary, engraving style, with a 120 mm stake.",
+      "expectedTools": ["find_maker_tools", "get_maker_tool", "design_plant_stake"],
+      "expectedResult": "A free generator link. Opening it fills in Rosemary, engraving style, and a 120 mm stake length. The website offers SVG, STL, and 3MF exports.",
+      "lastVerified": "2026-10-17",
+      "observed": "The link opened the production generator with Rosemary and 120 mm visible in its controls. SVG, STL, and 3MF export controls were present. File export and physical production were not tested."
+    },
+    {
+      "id": "unknown-generator",
+      "tool": "get_maker_tool",
+      "arguments": { "id": "registration-test-unknown-generator" },
+      "expectedResult": "A clear tool error directing the assistant to an id returned by find_maker_tools.",
+      "lastVerified": "2026-10-17",
+      "observed": "Returned isError=true: Unknown generator id. Use an id returned by find_maker_tools."
+    },
+    {
+      "id": "missing-authorization",
+      "request": "POST /mcp initialize without a bearer token",
+      "expectedResult": "HTTP 401 with the protected-resource metadata URL in WWW-Authenticate.",
+      "lastVerified": "2026-10-17",
+      "observed": "Production returned HTTP 401 Authentication required with the OAuth protected-resource metadata challenge."
+    },
+    {
+      "id": "paid-artwork-without-spend-approval",
+      "prompt": "Check what this artwork would cost, but do not spend any Sparks.",
+      "expectedTools": ["quote_download"],
+      "expectedResult": "The assistant reports current account access and the quoted cost, and does not call unlock_art. Review with dedicated sample account data."
+    }
+  ],
+  "reviewerAccess": {
+    "instructions": "Use a dedicated MyLaserTools test account supplied privately in the submission portal. Do not put reviewer passwords or personal account credentials in this repository or plugin archive.",
+    "credentialsIncluded": false
+  }
+}
