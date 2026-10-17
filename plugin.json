@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "mylasertools",
+  "version": "1.0.0",
+  "description": "Search vector artwork, inspect previews and file formats, download eligible originals with your MyLaserTools account, and open free personalized design generators for laser cutting, engraving, and 3D printing.",
+  "author": {
+    "name": "MyLaserTools",
+    "email": "support@mylasertools.com",
+    "url": "https://www.mylasertools.com"
+  },
+  "homepage": "https://www.mylasertools.com/connect-ai-assistant",
+  "repository": "https://github.com/JulyJ/mylasertools-mcp",
+  "license": "MIT",
+  "keywords": ["mcp", "laser-cutting", "laser-engraving", "svg", "vector-art", "3d-printing", "makers"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "MyLaserTools",
+        "shortDescription": "Artwork and maker designs",
+        "longDescription": "Find artwork for a specific maker project, compare previews, and inspect the file formats and rights recorded for each piece. Download originals your MyLaserTools account can already access, or check a quote before agreeing to spend Sparks on eligible artwork. Open free website generators with your supported text and dimensions filled in for connected text, plant stakes, backpack tags, and 3D printable boxes. Generator tools return website links; finish the design and export there. OAuth uses your existing account and plan benefits. Account allowances and per-item access conditions apply. Spark spending is optional and requires your agreement to a quoted cost. The tools never buy Sparks. Bulk catalogue extraction is unsupported.",
+        "developerName": "Julia Malkov",
+        "category": "Productivity",
+        "capabilities": ["Artwork search", "Artwork previews", "Eligible file downloads", "Design generator links"],
+        "websiteURL": "https://www.mylasertools.com",
+        "supportURL": "https://www.mylasertools.com/contact",
+        "privacyPolicyURL": "https://www.mylasertools.com/privacy",
+        "termsOfServiceURL": "https://www.mylasertools.com/terms",
+        "defaultPrompt": [
+          "Find three botanical SVG designs for engraving a wooden box. Show previews, formats, and rights.",
+          "Open a free plant stake generator with the name Rosemary.",
+          "Help me personalize a backpack tag for 3D printing."
+        ],
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

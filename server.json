@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.mylasertools/makers",
+  "title": "MyLaserTools for Makers",
+  "description": "Find vector artwork and free design generators for laser cutting, engraving and 3D printing.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.mylasertools.com/connect-ai-assistant",
+  "icons": [
+    {
+      "src": "https://www.mylasertools.com/brand/favicon.png",
+      "mimeType": "image/png"
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.mylasertools.com/mcp"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "documentation": "https://www.mylasertools.com/learn/business-integrations/connect-ai-assistant-mcp",
+      "support": "https://www.mylasertools.com/contact",
+      "privacyPolicy": "https://www.mylasertools.com/privacy",
+      "termsOfService": "https://www.mylasertools.com/terms",
+      "authentication": {
+        "type": "oauth2",
+        "resourceMetadata": "https://www.mylasertools.com/.well-known/oauth-protected-resource/mcp"
+      },
+      "keywords": ["laser cutting", "laser engraving", "SVG", "vector artwork", "3D printing", "design generators", "makers"]
+    }
+  }
+}

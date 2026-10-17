@@ -1,0 +1,15 @@
+{
+  "name": "mylasertools",
+  "version": "1.0.0",
+  "description": "Find vector artwork, preview and download eligible originals, and open free maker design generators with your MyLaserTools account.",
+  "author": {
+    "name": "MyLaserTools",
+    "email": "support@mylasertools.com",
+    "url": "https://www.mylasertools.com"
+  },
+  "homepage": "https://www.mylasertools.com/connect-ai-assistant",
+  "repository": "https://github.com/JulyJ/mylasertools-mcp",
+  "license": "MIT",
+  "keywords": ["mcp", "laser-cutting", "laser-engraving", "svg", "3d-printing", "makers"],
+  "mcpServers": "./.mcp.json"
+}

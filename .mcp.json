@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mylasertools": {
+      "type": "http",
+      "url": "https://www.mylasertools.com/mcp"
+    }
+  }
+}
