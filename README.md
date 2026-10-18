@@ -6,6 +6,8 @@ Find existing vector artwork and open free design generators from your AI assist
 **Transport:** Streamable HTTP  
 **Authentication:** OAuth with your MyLaserTools account
 
+[Official MCP Registry entry](https://registry.modelcontextprotocol.io/v0.1/servers/com.mylasertools%2Fmakers/versions/latest): `com.mylasertools/makers`, version `1.0.0`.
+
 [Connect your assistant](https://www.mylasertools.com/connect-ai-assistant) · [Setup guide](https://www.mylasertools.com/learn/business-integrations/connect-ai-assistant-mcp) · [Art Library](https://www.mylasertools.com/art-library) · [Support](https://www.mylasertools.com/contact)
 
 ## Connect
