@@ -95,7 +95,7 @@ This repository contains integration metadata and documentation. The license bel
 
 ## License
 
-[MIT](LICENSE), copyright 2026 Julia Malkov.
+[MIT](LICENSE), copyright 2026 MyLaserTools.
 
 ## Package formats
 

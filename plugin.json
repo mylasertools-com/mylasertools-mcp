@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "mylasertools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Search vector artwork, inspect previews and file formats, download eligible originals with your MyLaserTools account, and open free personalized design generators for laser cutting, engraving, and 3D printing.",
   "author": {
     "name": "MyLaserTools",
@@ -9,7 +9,7 @@
     "url": "https://www.mylasertools.com"
   },
   "homepage": "https://www.mylasertools.com/connect-ai-assistant",
-  "repository": "https://github.com/JulyJ/mylasertools-mcp",
+  "repository": "https://github.com/mylasertools-com/mylasertools-mcp",
   "license": "MIT",
   "keywords": ["mcp", "laser-cutting", "laser-engraving", "svg", "vector-art", "3d-printing", "makers"],
   "extensions": {
@@ -18,7 +18,7 @@
         "displayName": "MyLaserTools",
         "shortDescription": "Artwork and maker designs",
         "longDescription": "Find artwork for a specific maker project, compare previews, and inspect the file formats and rights recorded for each piece. Download originals your MyLaserTools account can already access, or check a quote before agreeing to spend Sparks on eligible artwork. Open free website generators with your supported text and dimensions filled in for connected text, plant stakes, backpack tags, and 3D printable boxes. Generator tools return website links; finish the design and export there. OAuth uses your existing account and plan benefits. Account allowances and per-item access conditions apply. Spark spending is optional and requires your agreement to a quoted cost. The tools never buy Sparks. Bulk catalogue extraction is unsupported.",
-        "developerName": "Julia Malkov",
+        "developerName": "MyLaserTools",
         "category": "Productivity",
         "capabilities": ["Artwork search", "Artwork previews", "Eligible file downloads", "Design generator links"],
         "websiteURL": "https://www.mylasertools.com",

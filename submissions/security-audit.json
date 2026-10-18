@@ -1,0 +1,35 @@
+{
+  "auditedOn": "2026-10-17",
+  "repository": "https://github.com/mylasertools-com/mylasertools-mcp",
+  "result": "No credentials detected",
+  "checks": {
+    "publishedHistory": {
+      "scanner": "Gitleaks 8.30.1",
+      "scope": "All published branches and tags from a fresh remote mirror",
+      "commitsAtInitialAudit": 3,
+      "findings": 0
+    },
+    "publishedReleaseDownloads": {
+      "scope": "Both v1.0.0 ZIP files downloaded from GitHub and verified against their published SHA-256 digests",
+      "findings": 0
+    },
+    "knownCredentialComparison": {
+      "scope": "Published Git objects and release files compared with local credentials and registry signing-key representations",
+      "comparisons": 32,
+      "matches": 0
+    },
+    "updatedFilesAndBundles": {
+      "scope": "Current integration files and corporate-branded v1.0.0 and v1.0.1 bundles",
+      "scanner": "Gitleaks 8.30.1",
+      "findings": 0
+    },
+    "logoMetadata": {
+      "personalAuthorMetadataRemoved": true,
+      "compressedImagePixelDataUnchanged": true
+    }
+  },
+  "repositoryProtection": {
+    "githubSecretScanning": "enabled",
+    "githubPushProtection": "enabled"
+  }
+}
